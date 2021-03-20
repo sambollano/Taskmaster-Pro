@@ -90,6 +90,15 @@ $("#remove-tasks").on("click", function() {
   }
   saveTasks();
 });
-
+$(".list-group").on("click", "p", function() {
+    var text = $(this)
+      .text()
+      var textInput = $("<textarea>")
+      $(this).replaceWith(textInput);
+      textInput.trigger("focus");
+  .addClass("form-control")
+  .val(text);
+      .trim();
+  });
 // load tasks for the first time
 loadTasks();
