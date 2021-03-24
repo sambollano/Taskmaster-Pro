@@ -45,7 +45,9 @@ var saveTasks = function() {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 };
 
+$("#task-form-modal .btn-primary").click(function() {
 
+});
 
 
 // modal was triggered
